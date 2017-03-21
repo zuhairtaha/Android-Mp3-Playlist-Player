@@ -7,4 +7,115 @@
     android:layout_height="match_parent"
     tools:context="tahainshad.com.app.SongsActivity">
 
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <ImageView
+            android:id="@+id/imgSinger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/singerImgDesc"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|fill_horizontal"
+            android:background="@color/colorAccent"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/editTextCurrentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zeros"/>
+
+            <TextView
+                android:id="@+id/editTextFullTme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/zeros"/>
+
+            <LinearLayout
+                android:id="@+id/palyPauseStopNextPrev"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/imgBtnPrev"
+                    style="@style/AlertDialog.AppCompat.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="prevSong"
+
+                    android:text="<"/>
+
+                <Button
+                    android:id="@+id/imgBtnPlay"
+                    style="@style/AlertDialog.AppCompat.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="startSong"
+                    android:text="p"/>
+
+                <Button
+                    android:id="@+id/imgBtnStop"
+                    style="@style/AlertDialog.AppCompat.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="stopSong"
+                    android:text="O"/>
+
+                <Button
+                    android:id="@+id/imgBtnNext"
+                    style="@style/AlertDialog.AppCompat.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="nextSong"
+                    android:text=">"/>
+
+                <Button
+                    android:id="@+id/imgBtnPause"
+                    style="@style/AlertDialog.AppCompat.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="pauseSong"
+                    android:text="||"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/songsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

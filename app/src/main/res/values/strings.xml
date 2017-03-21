@@ -3,4 +3,5 @@
     <string name="singerImgDesc">Singer image</string>
     <string name="singerName">singer name</string>
     <string name="singerDesc">singer description</string>
+    <string name="zeros">00:00</string>
 </resources>
