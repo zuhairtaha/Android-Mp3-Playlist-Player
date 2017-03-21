@@ -73,7 +73,7 @@
                     android:layout_height="wrap_content"
                     android:onClick="prevSong"
 
-                    android:text="<"/>
+                    android:text="@string/prev"/>
 
                 <Button
                     android:id="@+id/imgBtnPlay"
@@ -81,7 +81,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="startSong"
-                    android:text="p"/>
+                    android:text="@string/p"/>
 
                 <Button
                     android:id="@+id/imgBtnStop"
@@ -89,7 +89,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="stopSong"
-                    android:text="O"/>
+                    android:text="@string/o"/>
 
                 <Button
                     android:id="@+id/imgBtnNext"
@@ -97,7 +97,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="nextSong"
-                    android:text=">"/>
+                    android:text="@string/next"/>
 
                 <Button
                     android:id="@+id/imgBtnPause"
@@ -105,7 +105,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="pauseSong"
-                    android:text="||"/>
+                    android:text="@string/pause"/>
             </LinearLayout>
 
 

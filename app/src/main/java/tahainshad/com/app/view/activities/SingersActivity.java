@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.List;
+
 
 import tahainshad.com.app.R;
 import tahainshad.com.app.control.SingerManager;
@@ -22,7 +24,7 @@ public class SingersActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_singers);
-
+        Toast.makeText(SingersActivity.this,"Test" , Toast.LENGTH_SHORT).show();
         listSingers = (ListView) findViewById(R.id.listSingers);
         fillSingersList();
     } // end onCreate;

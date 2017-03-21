@@ -9,4 +9,9 @@
     <string name="title_activity_songs">SongsActivity</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="init_time_zeros">00:00</string>
+    <string name="prev"><![CDATA[<]]></string>
+    <string name="p">p</string>
+    <string name="o">O</string>
+    <string name="next"><![CDATA[>]]></string>
+    <string name="pause">||</string>
 </resources>

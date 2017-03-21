@@ -1,4 +1,4 @@
-package tahainshad.com.app.view.activities;
+package tahainshad.com.app;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

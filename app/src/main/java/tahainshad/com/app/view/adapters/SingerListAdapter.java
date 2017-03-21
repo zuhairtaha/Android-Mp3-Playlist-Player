@@ -18,6 +18,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import tahainshad.com.app.R;
 import tahainshad.com.app.model.Singer;
 
 /**
